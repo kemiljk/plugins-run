@@ -19,7 +19,7 @@
       <Subheader>
         <template #text>
           A series of simple utility plugins that allow you as a designer or
-          developer to easily manage your day to day workflow and improve your
+          developer to easily manage your day-to-day workflow and improve your
           efficiencies. <strong>All for free.</strong>
         </template>
       </Subheader>
