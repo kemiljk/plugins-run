@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center pl-0.5"
+    class="hidden w-12 h-12 bg-gray-300 rounded-full sm:flex items-center justify-center pl-0.5"
   >
     <svg
       viewBox="0 0 654 601"

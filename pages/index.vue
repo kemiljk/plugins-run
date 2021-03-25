@@ -4,7 +4,8 @@
       <div class="w-full fixed z-50 bg-gray-1000">
         <div class="flex mx-auto md:mx-8 py-4 justify-between items-center">
           <Logo />
-          <div class="flex max-w-3xl justify-center items-center">
+          <Spacer class="sm:hidden" />
+          <div class="flex sm:max-w-3xl justify-center items-center sm:mx-auto">
             <h1 class="text-5xl font-black text-gray-800 dark:text-gray-200">
               plugins<span class="text-gray-400 dark:text-gray-600">.</span>run
             </h1>

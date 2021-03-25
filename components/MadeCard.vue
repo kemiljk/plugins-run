@@ -7,7 +7,7 @@
       cursor="pointer"
     >
       <button
-        class="h-48 w-full flex items-start ring-2 ring-gray-100 dark:ring-gray-800 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition ease-in-out duration-200 rounded-2xl text-left focus:outline-none focus:ring-2 focus:ring-white"
+        class="sm:h-48 w-full flex items-start ring-2 ring-gray-100 dark:ring-gray-800 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition ease-in-out duration-200 rounded-2xl text-left focus:outline-none focus:ring-2 focus:ring-white"
       >
         <div class="w-full px-4 py-4">
           <header class="mb-4">
@@ -18,7 +18,7 @@
                 alt="Image of media"
               />
               <div class="w-full flex justify-between">
-                <div>
+                <div class="w-5/6 sm:w-full">
                   <h4
                     class="pb-4 text-md font-black tracking-wide text-gray-900 dark:text-gray-100"
                   >
