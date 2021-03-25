@@ -33,14 +33,14 @@ export default {
   data() {
     return {
       loading: false,
-      slug: "",
+      // slug: "",
       mades: {},
     };
   },
   created() {
-    this.slug = this.$route.params.slug;
+    // this.slug = this.$route.params.slug;
     this.getMadesData();
-    fetch("../../api/handover-plugin-stats.js")
+    fetch("../api/handover-plugin-stats.js")
       .then((response) => response.json())
       .then((data) => {
         document
@@ -48,7 +48,7 @@ export default {
           .prepend(data.install_count);
         document.getElementById("handover-like-count").prepend(data.like_count);
       });
-    fetch("../../api/placeholder-plugin-stats.js")
+    fetch("../api/placeholder-plugin-stats.js")
       .then((response) => response.json())
       .then((data) => {
         document
@@ -58,7 +58,7 @@ export default {
           .getElementById("placeholder-like-count")
           .prepend(data.like_count);
       });
-    fetch("../../api/roundall-plugin-stats.js")
+    fetch("../api/roundall-plugin-stats.js")
       .then((response) => response.json())
       .then((data) => {
         document
@@ -66,7 +66,7 @@ export default {
           .prepend(data.install_count);
         document.getElementById("roundall-like-count").prepend(data.like_count);
       });
-    fetch("../../api/default-export-plugin-stats.js")
+    fetch("../api/default-export-plugin-stats.js")
       .then((response) => response.json())
       .then((data) => {
         document
@@ -76,7 +76,7 @@ export default {
           .getElementById("default-export-like-count")
           .prepend(data.like_count);
       });
-    fetch("../../api/perfect-radius-plugin-stats.js")
+    fetch("../api/perfect-radius-plugin-stats.js")
       .then((response) => response.json())
       .then((data) => {
         document
@@ -86,7 +86,7 @@ export default {
           .getElementById("perfect-radius-like-count")
           .prepend(data.like_count);
       });
-    fetch("../../api/shape-to-frame-plugin-stats.js")
+    fetch("../api/shape-to-frame-plugin-stats.js")
       .then((response) => response.json())
       .then((data) => {
         document
@@ -113,10 +113,5 @@ export default {
         });
     },
   },
-  // computed: {
-  //   imageURL() {
-  //     return this.made?.metadata.cover.imgix_url;
-  //   },
-  // },
 };
 </script>
