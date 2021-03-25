@@ -9,14 +9,114 @@
       </div>
       <Spacer />
     </nav>
-    <div class="grid h-screen mx-auto max-w-3xl place-items-center">
-      <h1 class="text-center font-extrabold text-3xl text-gray-400">
-        Coming soon
-      </h1>
+    <div class="flex flex-row">
+      <div class="grid w-full sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div v-for="made in mades" :key="made.title">
+          <keep-alive>
+            <MadeCard :made="made" />
+          </keep-alive>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+const Cosmic = require("cosmicjs");
+const api = Cosmic();
+const bucket = api.bucket({
+  slug: "kemiljk",
+  read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK",
+});
+
+export default {
+  data() {
+    return {
+      loading: false,
+      slug: "",
+      mades: {},
+    };
+  },
+  created() {
+    this.slug = this.$route.params.slug;
+    this.getMadesData();
+    fetch("../../api/handover-plugin-stats.js")
+      .then((response) => response.json())
+      .then((data) => {
+        document
+          .getElementById("handover-install-count")
+          .prepend(data.install_count);
+        document.getElementById("handover-like-count").prepend(data.like_count);
+      });
+    fetch("../../api/placeholder-plugin-stats.js")
+      .then((response) => response.json())
+      .then((data) => {
+        document
+          .getElementById("placeholder-install-count")
+          .prepend(data.install_count);
+        document
+          .getElementById("placeholder-like-count")
+          .prepend(data.like_count);
+      });
+    fetch("../../api/roundall-plugin-stats.js")
+      .then((response) => response.json())
+      .then((data) => {
+        document
+          .getElementById("roundall-install-count")
+          .prepend(data.install_count);
+        document.getElementById("roundall-like-count").prepend(data.like_count);
+      });
+    fetch("../../api/default-export-plugin-stats.js")
+      .then((response) => response.json())
+      .then((data) => {
+        document
+          .getElementById("default-export-install-count")
+          .prepend(data.install_count);
+        document
+          .getElementById("default-export-like-count")
+          .prepend(data.like_count);
+      });
+    fetch("../../api/perfect-radius-plugin-stats.js")
+      .then((response) => response.json())
+      .then((data) => {
+        document
+          .getElementById("perfect-radius-install-count")
+          .prepend(data.install_count);
+        document
+          .getElementById("perfect-radius-like-count")
+          .prepend(data.like_count);
+      });
+    fetch("../../api/shape-to-frame-plugin-stats.js")
+      .then((response) => response.json())
+      .then((data) => {
+        document
+          .getElementById("shape-to-frame-install-count")
+          .prepend(data.install_count);
+        document
+          .getElementById("shape-to-frame-like-count")
+          .prepend(data.like_count);
+      });
+  },
+  methods: {
+    async getMadesData() {
+      this.error = this.made = null;
+      this.loading = true;
+      await bucket
+        .getObjects({
+          type: "mades",
+          props: "_id,title,metadata",
+        })
+        .then((data) => {
+          const mades = data.objects;
+          this.loading = false;
+          this.mades = mades;
+        });
+    },
+  },
+  // computed: {
+  //   imageURL() {
+  //     return this.made?.metadata.cover.imgix_url;
+  //   },
+  // },
+};
 </script>
