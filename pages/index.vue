@@ -99,7 +99,6 @@ export default {
   },
   methods: {
     async getMadesData() {
-      this.error = this.made = null;
       this.loading = true;
       await bucket
         .getObjects({
