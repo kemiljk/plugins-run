@@ -12,7 +12,8 @@
     "core-js": "^3.8.3",
     "cosmicjs": "^4.0.6",
     "nuxt": "^2.14.12",
-    "vue-feather-icons": "^5.1.0"
+    "vue-feather-icons": "^5.1.0",
+    "vue-plausible": "^1.1.4"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.4.2",
