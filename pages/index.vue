@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav>
-      <div class="w-full fixed z-50 bg-gray-1000">
+      <div class="w-full fixed z-50 bg-gray-50 dark:bg-gray-1000">
         <div class="flex mx-auto md:mx-8 py-4 justify-between items-center">
           <Logo />
           <Spacer class="sm:hidden" />

@@ -28,7 +28,7 @@ export default {
   buildModules: ["@nuxtjs/tailwindcss"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ["vue-plausible"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
