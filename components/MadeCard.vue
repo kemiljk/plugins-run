@@ -24,28 +24,33 @@
                   >
                     {{ made.title }}
                   </h4>
-                  <div class="flex space-x-2 mb-4">
-                    <Tag color="pink" v-if="made.metadata.figma">Figma</Tag>
-                    <Tag color="green" v-if="made.metadata.installcount"
-                      ><span
+                  <div class="flex space-x-8 mb-4">
+                    <div
+                      v-if="made.metadata.installcount"
+                      class="flex items-center justify-between"
+                    >
+                      <span
                         :id="made.metadata.installcount"
-                        class="flex items-center"
-                        >&nbsp;<download-icon
-                          class="text-green-700 dark:text-green-400"
-                          size="12"
+                        class="flex items-center text-md text-green-700 dark:text-green-400"
+                        ><download-icon
+                          class="ml-2 text-green-700 dark:text-green-400"
+                          size="20"
                         ></download-icon
                       ></span>
-                    </Tag>
-                    <Tag color="indigo" v-if="made.metadata.likecount"
-                      ><span
+                    </div>
+                    <div
+                      v-if="made.metadata.likecount"
+                      class="flex items-center justify-between"
+                    >
+                      <span
                         :id="made.metadata.likecount"
-                        class="flex items-center"
-                        >&nbsp;<heart-icon
-                          class="text-indigo-700 dark:text-indigo-400"
-                          size="12"
+                        class="flex items-center text-md text-red-700 dark:text-red-400"
+                        ><heart-icon
+                          class="ml-2 text-red-700 dark:text-red-400"
+                          size="20"
                         ></heart-icon
                       ></span>
-                    </Tag>
+                    </div>
                   </div>
                 </div>
                 <download-icon
