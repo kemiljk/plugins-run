@@ -25,7 +25,7 @@
                     {{ made.title }}
                   </h4>
                   <div class="flex space-x-2 mb-4">
-                    <Tag color="pink" v-if="made.metadata.figma">Figma </Tag>
+                    <Tag color="pink" v-if="made.metadata.figma">Figma</Tag>
                     <Tag color="green" v-if="made.metadata.installcount"
                       ><span
                         :id="made.metadata.installcount"
@@ -48,13 +48,9 @@
                     </Tag>
                   </div>
                 </div>
-                <compass-icon
-                  v-if="made.metadata.website"
-                  class="text-gray-700 dark:text-gray-300"
-                ></compass-icon>
                 <download-icon
                   v-if="made.metadata.download"
-                  class="text-gray-700 dark:text-gray-300"
+                  class="text-gray-700 dark:text-gray-300 hidden sm:block"
                 ></download-icon>
               </div>
             </div>
