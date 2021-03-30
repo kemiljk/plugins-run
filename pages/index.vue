@@ -10,7 +10,7 @@
               plugins<span class="text-gray-400 dark:text-gray-600">.</span>run
             </h1>
           </div>
-          <Spacer />
+          <Spacer class="sm:pr-10" />
         </div>
       </div>
     </nav>
