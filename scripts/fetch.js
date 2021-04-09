@@ -55,6 +55,16 @@ function fetchFigmaData() {
         .getElementById("shape-to-frame-like-count")
         .prepend(data.like_count);
     });
+    fetch("../../api/batch-image-plugin-stats.js")
+    .then((response) => response.json())
+    .then((data) => {
+      document
+        .getElementById("batch-image-install-count")
+        .prepend(data.install_count);
+      document
+        .getElementById("batch-image-like-count")
+        .prepend(data.like_count);
+    });
 }
 
 export default fetchFigmaData();
