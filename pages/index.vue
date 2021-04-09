@@ -70,7 +70,6 @@ export default {
             type: "mades",
           },
           props: "_id,title,metadata",
-          limit: 6,
         })
         .then((data) => {
           const mades = data.objects;
