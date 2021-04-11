@@ -55,7 +55,7 @@ export default {
   },
   beforeCreate() {
     this.fetchFigmaData();
-  }
+  },
   created() {
     this.getMadesData();
   },
