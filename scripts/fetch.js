@@ -55,7 +55,7 @@ function fetchFigmaData() {
         .getElementById("shape-to-frame-like-count")
         .prepend(data.like_count);
     });
-    fetch("../../api/batch-image-plugin-stats.js")
+  fetch("../../api/batch-image-plugin-stats.js")
     .then((response) => response.json())
     .then((data) => {
       document
@@ -63,6 +63,16 @@ function fetchFigmaData() {
         .prepend(data.install_count);
       document
         .getElementById("batch-image-like-count")
+        .prepend(data.like_count);
+    });
+  fetch("../../api/scale-better-plugin-stats.js")
+    .then((response) => response.json())
+    .then((data) => {
+      document
+        .getElementById("scale-better-install-count")
+        .prepend(data.install_count);
+      document
+        .getElementById("scale-better-like-count")
         .prepend(data.like_count);
     });
 }
