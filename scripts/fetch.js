@@ -75,6 +75,16 @@ function fetchFigmaData() {
         .getElementById("scale-better-like-count")
         .prepend(data.like_count);
     });
+  fetch("../../api/get-instances-plugin-stats.js")
+    .then((response) => response.json())
+    .then((data) => {
+      document
+        .getElementById("get-instances-install-count")
+        .prepend(data.install_count);
+      document
+        .getElementById("get-instances-like-count")
+        .prepend(data.like_count);
+    });
 }
 
 export default fetchFigmaData();
