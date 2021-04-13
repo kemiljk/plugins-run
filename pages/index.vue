@@ -37,6 +37,7 @@
 </template>
 
 <script>
+import getSiteMeta from "../utils/getSiteMeta";
 import fetchFigmaData from "../scripts/fetch";
 
 const Cosmic = require("cosmicjs");
@@ -74,7 +75,7 @@ export default {
     };
   },
   beforeCreate() {
-    this.fetchFigmaData();
+    this.fetchFigmaData;
   },
   created() {
     this.getMadesData();
