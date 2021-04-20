@@ -85,6 +85,16 @@ function fetchFigmaData() {
         .getElementById("get-instances-like-count")
         .prepend(data.like_count);
     });
+  fetch("../../api/replace-all-plugin-stats.js")
+    .then((response) => response.json())
+    .then((data) => {
+      document
+        .getElementById("replace-all-install-count")
+        .prepend(data.install_count);
+      document
+        .getElementById("replace-all-like-count")
+        .prepend(data.like_count);
+    });
 }
 
 export default fetchFigmaData();
