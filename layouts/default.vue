@@ -15,7 +15,7 @@
       <p
         class="w-full md:w-2/3 lg:w-1/3 text-center text-black dark:text-white"
       >
-        All plugins and this site are built and maintained by <a href="https://www.kejk.tech" class="underline font-bold">Karl Emil James Koch</a>.
+        All plugins and this site are built and maintained by <a href="https://www.kejk.tech" class="underline font-bold" target="_blank">Karl Emil James Koch</a>.
       </p>
     </div>
   </div>
