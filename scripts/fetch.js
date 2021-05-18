@@ -102,9 +102,9 @@ function fetchFigmaData() {
 }
 
 function kFormatter(num) {
-  if (num > 999) {
+  if (num > 999 && num < 1100) {
     return (num / 1000).toFixed(0) + "k";
-  } else if (num > 999 && num < 1100) {
+  } else if (num > 999) {
     return (num / 1000).toFixed(1) + "k";
   } else {
     return num;

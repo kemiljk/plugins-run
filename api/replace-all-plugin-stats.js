@@ -5,7 +5,7 @@ const https = require("https");
 module.exports = (req, res) => {
   const url = "https://www.figma.com/api/plugins/965889760815013524/versions";
   https.get(url, (resp) => {
-    let data = kFormatter("");
+    let data = "";
     resp.on("data", (chunk) => {
       data += chunk;
     });
@@ -18,11 +18,3 @@ module.exports = (req, res) => {
     });
   });
 };
-
-function kFormatter(num) {
-  if (num > 999) {
-    return (num / 1000).toFixed(1) + "k";
-  } else {
-    return num;
-  }
-}
