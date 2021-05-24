@@ -42,8 +42,8 @@ import fetchFigmaData from "../scripts/fetch";
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
 const bucket = api.bucket({
-  slug: "kemiljk",
-  read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK",
+  slug: process.env.NUXT_ENV_COSMIC_SLUG,
+  read_key: process.env.NUXT_ENV_COSMIC_READ_KEY,
 });
 
 export default {
