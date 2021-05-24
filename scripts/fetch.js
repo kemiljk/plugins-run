@@ -79,7 +79,6 @@ function fetchFigmaData() {
         .getElementById("scale-better-like-count")
         .prepend(kFormatter(data.like_count));
     });
-<<<<<<< HEAD
   fetch("../../api/space-cleaner-plugin-stats.js")
     .then((response) => response.json())
     .then((data) => {
@@ -90,7 +89,6 @@ function fetchFigmaData() {
         .getElementById("space-cleaner-like-count")
         .prepend(data.like_count);
     });
-=======
   fetch("../../api/get-instances-plugin-stats.js")
     .then((response) => response.json())
     .then((data) => {
@@ -121,7 +119,6 @@ function kFormatter(num) {
   } else {
     return num;
   }
->>>>>>> 2f1b1477226f403357e7c25969be18441a42e2b4
 }
 
 export default fetchFigmaData();
