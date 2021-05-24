@@ -37,6 +37,7 @@
 </template>
 
 <script>
+import getSiteMeta from "../utils/getSiteMeta";
 import fetchFigmaData from "../scripts/fetch";
 
 const Cosmic = require("cosmicjs");
@@ -47,15 +48,37 @@ const bucket = api.bucket({
 });
 
 export default {
+  computed: {
+    meta() {
+      const metaData = {
+        title: "Plugins.run | Home",
+        description:
+          "A series of simple utility plugins that allow you as a designer or developer to easily manage your day-to-day workflow and improve your efficiencies. All for free.",
+        url: "https://plugins.run/",
+        mainImage:
+          "https://res.cloudinary.com/kejk/image/upload/v1618328371/OG_Image_ezoyz9.png",
+      };
+      return getSiteMeta(metaData);
+    },
+  },
+  head() {
+    return {
+      title: "Plugins.run | Home",
+      meta: [...this.meta],
+      link: [{ rel: "canonical", href: "https://plugins.run/" }],
+    };
+  },
   data() {
     return {
       loading: false,
       mades: {},
     };
   },
+  beforeCreate() {
+    this.fetchFigmaData;
+  },
   created() {
     this.getMadesData();
-    this.fetchFigmaData();
   },
   methods: {
     async fetchFigmaData() {
@@ -70,7 +93,6 @@ export default {
             type: "mades",
           },
           props: "_id,title,metadata",
-          limit: 6,
         })
         .then((data) => {
           const mades = data.objects;
