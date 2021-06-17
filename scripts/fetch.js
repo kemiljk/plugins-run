@@ -109,6 +109,16 @@ function fetchFigmaData() {
         .getElementById("replace-all-like-count")
         .prepend(kFormatter(data.like_count));
     });
+  fetch("../../api/better-logos-plugin-stats.js")
+    .then((response) => response.json())
+    .then((data) => {
+      document
+        .getElementById("better-logos-install-count")
+        .prepend(kFormatter(data.install_count));
+      document
+        .getElementById("better-logos-like-count")
+        .prepend(kFormatter(data.like_count));
+    });
 }
 
 function kFormatter(num) {
