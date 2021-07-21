@@ -74,11 +74,11 @@ export default {
       mades: {},
     };
   },
-  beforeCreate() {
-    this.fetchFigmaData;
-  },
   created() {
     this.getMadesData();
+  },
+  mounted() {
+    this.fetchFigmaData;
   },
   methods: {
     async fetchFigmaData() {
