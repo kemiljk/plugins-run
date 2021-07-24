@@ -74,10 +74,8 @@ export default {
       mades: {},
     };
   },
-  beforeCreate() {
+  mounted() {
     this.fetchFigmaData;
-  },
-  created() {
     this.getMadesData();
   },
   methods: {

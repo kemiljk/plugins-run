@@ -1,5 +1,6 @@
 export default {
   ssr: true,
+
   target: "static",
 
   head: {
@@ -13,7 +14,7 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "apple-mobile-web-app-capable", content: "yes" },
       { name: "apple-mobile-web-app-status-bar-style", content: "default" },
-      { name: "apple-mobile-web-app-title", content: "KEJK" },
+      { name: "apple-mobile-web-app-title", content: "Plugins.run" },
       {
         hid: "description",
         name: "description",
@@ -74,6 +75,69 @@ export default {
         content:
           "https://res.cloudinary.com/kejk/image/upload/v1618328371/Twitter_Image_eteqen.png",
       },
+      link: [
+        { rel: "icon", href: "/favicon.svg" },
+        { rel: "icon", href: "/favicon.ico" },
+        { rel: "mask-icon", href: "/mask-icon.svg", color: "#F1F5F9" },
+        {
+          rel: "apple-touch-icon",
+          type: "image/x-icon",
+          href: "/apple-icon.png",
+        },
+        {
+          rel: "apple-touch-icon",
+          type: "image/x-icon",
+          sizes: "57x57",
+          href: "/apple-icon.png",
+        },
+        {
+          rel: "apple-touch-icon",
+          type: "image/x-icon",
+          sizes: "60x60",
+          href: "/apple-icon.png",
+        },
+        {
+          rel: "apple-touch-icon",
+          type: "image/x-icon",
+          sizes: "72x72",
+          href: "/apple-icon.png",
+        },
+        {
+          rel: "apple-touch-icon",
+          type: "image/x-icon",
+          sizes: "76x76",
+          href: "/apple-icon.png",
+        },
+        {
+          rel: "apple-touch-icon",
+          type: "image/x-icon",
+          sizes: "114x114",
+          href: "/apple-icon.png",
+        },
+        {
+          rel: "apple-touch-icon",
+          type: "image/x-icon",
+          sizes: "120x120",
+          href: "/apple-icon.png",
+        },
+        {
+          rel: "apple-touch-icon",
+          type: "image/x-icon",
+          sizes: "144x144",
+          href: "/apple-icon.png",
+        },
+        {
+          rel: "apple-touch-icon",
+          type: "image/x-icon",
+          sizes: "152x152",
+          href: "/apple-icon.png",
+        },
+        {
+          rel: "apple-touch-icon",
+          type: "image/x-icon",
+          sizes: "180x180",
+          href: "/apple-icon.png",
+        },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
