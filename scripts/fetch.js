@@ -119,10 +119,22 @@ function fetchFigmaData() {
         .getElementById("better-logos-like-count")
         .prepend(kFormatter(data.like_count));
     });
+  fetch("../../api/text-styler-plugin-stats.js")
+    .then((response) => response.json())
+    .then((data) => {
+      document
+        .getElementById("text-styler-install-count")
+        .prepend(kFormatter(data.install_count));
+      document
+        .getElementById("text-styler-like-count")
+        .prepend(kFormatter(data.like_count));
+    });
 }
 
 function kFormatter(num) {
-    return Math.abs(num) > 999 ? Math.sign(num)*((Math.abs(num)/1000).toFixed(1)) + 'k' : Math.sign(num)*Math.abs(num)
+  return Math.abs(num) > 999
+    ? Math.sign(num) * (Math.abs(num) / 1000).toFixed(1) + "k"
+    : Math.sign(num) * Math.abs(num);
 }
 
 export default fetchFigmaData();
