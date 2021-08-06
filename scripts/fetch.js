@@ -119,14 +119,14 @@ function fetchFigmaData() {
         .getElementById("better-logos-like-count")
         .prepend(kFormatter(data.like_count));
     });
-  fetch("../../api/text-styler-plugin-stats.js")
+  fetch("../../api/batch-styler-plugin-stats.js")
     .then((response) => response.json())
     .then((data) => {
       document
-        .getElementById("text-styler-install-count")
+        .getElementById("batch-styler-install-count")
         .prepend(kFormatter(data.install_count));
       document
-        .getElementById("text-styler-like-count")
+        .getElementById("batch-styler-like-count")
         .prepend(kFormatter(data.like_count));
     });
 }

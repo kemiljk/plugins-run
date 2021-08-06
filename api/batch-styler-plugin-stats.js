@@ -3,7 +3,7 @@
 const https = require("https");
 
 module.exports = (req, res) => {
-  const url = "https://www.figma.com/api/plugins/1005391639506889948/versions";
+  const url = "https://www.figma.com/api/plugins/1005464966294664447/versions";
   https.get(url, (resp) => {
     let data = "";
     resp.on("data", (chunk) => {
