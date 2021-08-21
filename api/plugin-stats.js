@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 const https = require("https");  
-  const PLUGINS = [{
+  const PLUGINS = [
     "batchStyler": {
       id: "1005464966294664447"
       name: "batch-styler"
@@ -53,7 +53,7 @@ const https = require("https");
     "spaceCleaner": {
       id: "977968775104001765",
       name: "space-cleaner"
-    }},
+    },
   ]
 
 module.exports = (req, res) => {
