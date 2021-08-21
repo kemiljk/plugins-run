@@ -26,9 +26,7 @@
       <div class="flex flex-row">
         <div class="grid w-full sm:grid-cols-2 gap-4">
           <div v-for="made in mades" :key="made.title">
-            <keep-alive>
               <MadeCard :made="made" />
-            </keep-alive>
           </div>
         </div>
       </div>
