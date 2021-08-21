@@ -109,6 +109,16 @@ function fetchFigmaData() {
         .getElementById("replace-all-like-count")
         .prepend(kFormatter(data.like_count));
     });
+  fetch("../../api/batch-styler-plugin-stats.js")
+  .then((response) => response.json())
+  .then((data) => {
+    document
+      .getElementById("batch-styler-install-count")
+      .prepend(kFormatter(data.install_count));
+    document
+      .getElementById("batch-styler-like-count")
+      .prepend(kFormatter(data.like_count));
+  });
   fetch("../../api/better-logos-plugin-stats.js")
     .then((response) => response.json())
     .then((data) => {
@@ -117,16 +127,6 @@ function fetchFigmaData() {
         .prepend(kFormatter(data.install_count));
       document
         .getElementById("better-logos-like-count")
-        .prepend(kFormatter(data.like_count));
-    });
-  fetch("../../api/batch-styler-plugin-stats.js")
-    .then((response) => response.json())
-    .then((data) => {
-      document
-        .getElementById("batch-styler-install-count")
-        .prepend(kFormatter(data.install_count));
-      document
-        .getElementById("batch-styler-like-count")
         .prepend(kFormatter(data.like_count));
     });
 }
