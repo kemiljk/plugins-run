@@ -1,5 +1,22 @@
 function fetchFigmaData() {
-  fetch("../../api/handover-plugin-stats.js")
+  const PLUGIN_URLS = ["../../api/handover-plugin-stats.js", "../../api/placeholder-plugin-stats.js", "../../api/roundall-plugin-stats.js", "../../api/default-export-plugin-stats.js", "../../api/perfect-radius-plugin-stats.js", "../../api/shape-to-frame-plugin-stats.js", "../../api/batch-image-plugin-stats.js", "../../api/scale-better-plugin-stats.js", "../../api/space-cleaner-plugin-stats.js", "../../api/get-instances-plugin-stats.js", "../../api/replace-all-plugin-stats.js", "../../api/better-logos-plugin-stats.js", "../../api/batch-styler-plugin-stats.js"]
+  const INSTALL_COUNTS = ["handover", "placeholder", "roundall", "default-export", "perfect-radius", "shape-to-frame", "batch-image", "scale-better", "space-cleaner", "get-instances", "replace-all", "better-logos", "batch-styler"]
+  const LIKE_COUNTS = ["handover", "placeholder", "roundall", "default-export", "perfect-radius", "shape-to-frame", "batch-image", "scale-better", "space-cleaner", "get-instances", "replace-all", "better-logos", "batch-styler"]
+  
+  PLUGIN_URLS.forEach((plugin) => {
+    fetch(PLUGIN_URLS)
+    .then((response) => response.json())
+    .then((data) => {
+      document
+        .getElementById(INSTALL_COUNTS + "-install-count")
+        .prepend(kFormatter(data.install_count));
+      document
+        .getElementById(LIKE_COUNTS + "-like-count")
+        .prepend(kFormatter(data.like_count));
+    });
+  });
+  
+  /* fetch("../../api/handover-plugin-stats.js")
     .then((response) => response.json())
     .then((data) => {
       document
@@ -128,7 +145,7 @@ function fetchFigmaData() {
       document
         .getElementById("better-logos-like-count")
         .prepend(kFormatter(data.like_count));
-    });
+    }); */
 }
 
 function kFormatter(num) {
