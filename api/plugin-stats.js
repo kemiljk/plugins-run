@@ -2,59 +2,55 @@
 
 const https = require("https");  
   const PLUGINS = [{
-    batchStyler: {
+    "batchStyler": {
       id: "1005464966294664447"
       name: "batch-styler"
     },
-    batchImage: {
+    "batchImage": {
       id: "961254533460516019",
       name: "batch-image"
     },
-    betterLogos: {
+    "betterLogos": {
       id: "984840399144699277",
       name: "better-logos"
     },
-    defaultExport: {
+    "defaultExport": {
       id: "939597261011175499",
       name: "default-export"
     },
-    getInstances: {
+    "getInstances": {
       id: "963807322482539548",
       name: "get-instances"
     },
-    getInstances: {
-      id: "963807322482539548",
-      name: "get-instances"
-    },
-    handover: {
+    "handover": {
       id: "837070613195594890",
       name: "handover"
     },
-    perfectRadius: {
+    "perfectRadius": {
       id: "944991908887656950",
       name: "perfect-radius"
     },
-    placeholder: {
+    "placeholder": {
       id: "936748515482279151",
       name: "placeholder"
     },
-    replaceAll: {
+    "replaceAll": {
       id: "965889760815013524",
       name: "replace-all"
     },
-    roundAll: {
+    "roundAll": {
       id: "939429933336921092",
       name: "round-all"
     },
-    scaleBetter: {
+    "scaleBetter": {
       id: "962438678016435824",
       name: "scale-better"
     },
-    shapeToFrame: {
+    "shapeToFrame": {
       id: "952557548511056612",
       name: "shape-to-frame"
     },
-    spaceCleaner: {
+    "spaceCleaner": {
       id: "977968775104001765",
       name: "space-cleaner"
     }},
