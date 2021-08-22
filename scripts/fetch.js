@@ -63,6 +63,7 @@ PLUGINS.forEach((plugin) => {
       const FETCHED_ID = data.id
       const FETCHED_INSTALL_COUNT = data.install_count
       const FETCHED_LIKE_COUNT = data.like_count
+      });
     .then(() => {  
         if (plugin.id === FETCHED_ID) {
           document
@@ -72,7 +73,6 @@ PLUGINS.forEach((plugin) => {
             .getElementById(plugin.name + "-like-count")
             .prepend(kFormatter(FETCHED_LIKE_COUNT))  
         }
-      });
     });
   });
   
