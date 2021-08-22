@@ -3,7 +3,7 @@
 const https = require("https");  
   const PLUGINS = [
     {
-      "id": "1005464966294664447"
+      "id": "1005464966294664447",
       "name": "batch-styler"
     },
     {
