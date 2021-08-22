@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 const https = require("https");  
-  const PLUGINS = [
+const PLUGINS = [
     {
       "id": "1005464966294664447",
       "name": "batch-styler"
@@ -74,5 +74,3 @@ module.exports = (req, res) => {
       });
     });
 };
-
-export default PLUGINS
