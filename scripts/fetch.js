@@ -60,13 +60,13 @@ function fetchFigmaData() {
     .then((data) => {
       document
         .getElementById(plugin.name + "-install-count")
-        if (plugin.name + "-install-count" === made.metadata.installCount) {
+        if (plugin.name + "-install-count" === made.metadata.installcount) {
       document  
         .prepend(kFormatter(data.install_count))
         };
       document
         .getElementById(plugin.name + "-like-count")
-        if (plugin.name + "-like-count" === made.metadata.likeCount) {
+        if (plugin.name + "-like-count" === made.metadata.likecount) {
       document 
         .prepend(kFormatter(data.like_count))
         };
