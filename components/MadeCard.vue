@@ -43,7 +43,7 @@
                       class="flex items-center justify-between"
                     >
                       <span
-                        :id="made.metadata.installcount"
+                        :id="made.metadata.installcount === plugin.name + '-install-count' && made.metadata.installcount"
                         class="flex items-center text-md text-green-700 dark:text-green-400"
                         ><download-icon
                           class="ml-2 text-green-700 dark:text-green-400"
@@ -56,7 +56,7 @@
                       class="flex items-center justify-between"
                     >
                       <span
-                        :id="made.metadata.likecount"
+                        :id="made.metadata.likecount === plugin.name + '-like-count' && made.metadata.likecount"
                         class="flex items-center text-md text-red-700 dark:text-red-400"
                         ><heart-icon
                           class="ml-2 text-red-700 dark:text-red-400"
