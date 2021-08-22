@@ -54,10 +54,10 @@ const PLUGINS = [
   ]
 
 function fetchFigmaData() {
-  PLUGINS.forEach((plugin) => {
   fetch("../api/plugin-stats.js")
     .then((response) => response.json())
     .then((data) => {
+     PLUGINS.forEach((plugin) => {
       document
         .getElementById(plugin.name + "-install-count")
         .prepend(kFormatter(plugin.id === data.id ? data.install_count : null))
