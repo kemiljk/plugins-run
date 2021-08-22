@@ -1,8 +1,8 @@
-import PLUGINS from "../api/plugin-stats";
+import PLUGINS from "../../api/plugin-stats.js";
 
 function fetchFigmaData() {
   PLUGINS.forEach((plugin) => {
-  fetch("plugin-stats.js")
+  fetch("../../api/plugin-stats")
     .then((response) => response.json())
     .then((data) => {
       document
