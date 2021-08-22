@@ -76,7 +76,7 @@ export default {
     this.getMadesData();
   },
   mounted() {
-    this.fetchFigmaData;
+    this.fetchFigmaData();
   },
   methods: {
     async fetchFigmaData() {
