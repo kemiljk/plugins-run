@@ -53,20 +53,25 @@ const PLUGINS = [
     }
   ]
   
-const SCRIPT = "../api/plugin-stats.js"
+const FETCH = "../api/plugin-stats.js"
 
 function fetchFigmaData() {
 PLUGINS.forEach((plugin) => {
-  fetch(SCRIPT)
+  fetch(FETCH)
     .then((response) => response.json())
     .then((data) => {
-      document
-        .getElementById(plugin.name + "-install-count")
-        .prepend(kFormatter(plugin.id === data.id ? data.install_count : null))
-
-      document
-        .getElementById(plugin.name + "-like-count")
-        .prepend(kFormatter(plugin.id === data.id ? data.like_count : null))
+      const FETCHED_ID = data.id
+      const FETCHED_INSTALL_COUNT = data.install_count
+      const FETCHED_LIKE_COUNT = data.like_count
+      
+      if (plugin.id === FETCHED_ID) {
+        document
+          .getElementById(plugin.name + "-install-count")
+          .prepend(kFormatter(FETCHED_INSTALL_COUNT))
+        document
+          .getElementById(plugin.name + "-like-count")
+          .prepend(kFormatter(FETCHED_LIKE_COUNT))  
+      }
     });
   });
   
