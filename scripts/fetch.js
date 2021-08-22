@@ -72,7 +72,7 @@ PLUGINS.forEach((plugin) => {
             .getElementById(plugin.name + "-like-count")
             .prepend(kFormatter(FETCHED_LIKE_COUNT))  
         }
-      }
+      });
     });
   });
   
