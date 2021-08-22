@@ -52,12 +52,14 @@ const PLUGINS = [
       "name": "space-cleaner"
     }
   ]
+  
+const SCRIPT = "../api/plugin-stats.js"
 
 function fetchFigmaData() {
-  fetch("../api/plugin-stats.js")
+PLUGINS.forEach((plugin) => {
+  fetch(SCRIPT)
     .then((response) => response.json())
     .then((data) => {
-     PLUGINS.forEach((plugin) => {
       document
         .getElementById(plugin.name + "-install-count")
         .prepend(kFormatter(plugin.id === data.id ? data.install_count : null))
