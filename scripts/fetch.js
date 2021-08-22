@@ -55,8 +55,8 @@ const PLUGINS = [
   
 const FETCH = "../api/plugin-stats.js"
 
-/* function fetchFigmaData() {
-PLUGINS.forEach((plugin) => {
+function fetchFigmaData() {
+/* PLUGINS.forEach((plugin) => {
   fetch(FETCH)
     .then((response) => response.json())
     .then((data) => {
