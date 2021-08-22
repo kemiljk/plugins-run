@@ -60,11 +60,11 @@ function fetchFigmaData() {
     .then((data) => {
       document
         .getElementById(plugin.name + "-install-count")
-        .prepend(kFormatter(data.install_count))
+        .prepend(kFormatter(plugin.id === data.id ? data.install_count : null))
 
       document
         .getElementById(plugin.name + "-like-count")
-        .prepend(kFormatter(data.like_count))
+        .prepend(kFormatter(plugin.id === data.id ? data.like_count : null))
     });
   });
   
