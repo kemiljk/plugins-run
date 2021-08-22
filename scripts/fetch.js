@@ -55,7 +55,7 @@ const PLUGINS = [
   
 const FETCH = "../api/plugin-stats.js"
 
-function fetchFigmaData() {
+/* function fetchFigmaData() {
 PLUGINS.forEach((plugin) => {
   fetch(FETCH)
     .then((response) => response.json())
@@ -73,7 +73,7 @@ PLUGINS.forEach((plugin) => {
           .prepend(kFormatter(FETCHED_LIKE_COUNT))  
       }
     });
-  });
+  }); */
   
   /* fetch("../../api/handover-plugin-stats.js")
     .then((response) => response.json())
