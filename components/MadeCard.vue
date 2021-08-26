@@ -7,7 +7,7 @@
       cursor="pointer"
     >
       <button
-        class="sm:h-48 w-full flex items-start ring-2 ring-gray-100 dark:ring-gray-800 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition ease-in-out duration-200 rounded-2xl text-left focus:outline-none focus:ring-2 focus:ring-white"
+        class="h-max w-full flex items-start ring-2 ring-gray-100 dark:ring-gray-800 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition ease-in-out duration-200 rounded-2xl text-left focus:outline-none focus:ring-2 focus:ring-white"
       >
         <div class="w-full px-4 py-4">
           <header class="mb-4">
@@ -24,6 +24,11 @@
                   >
                     {{ made.title }}
                   </h4>
+                  <div class="h-0.5 w-full bg-gray-100 dark:bg-gray-900" />
+          <p class="pt-2 text-gray-500 dark:text-gray-200 text-sm font-mono">
+            {{ made.metadata.subtitle }}
+          </p>
+        </div>
                   <!-- <div class="flex space-x-8 mb-4" v-if="this.loading === true">
                     <svg
                       class="animate-spin -ml-1 mr-3 h-5 w-5 text-gray-600 dark:text-gray-400"
@@ -73,11 +78,11 @@
               </div>
             </div>
           </header>
-          <div class="h-0.5 w-full bg-gray-100 dark:bg-gray-900" />
+          <!-- <div class="h-0.5 w-full bg-gray-100 dark:bg-gray-900" />
           <p class="pt-2 text-gray-500 dark:text-gray-200 text-sm font-mono">
             {{ made.metadata.subtitle }}
           </p>
-        </div>
+        </div> -->
       </button>
     </a>
   </div>
