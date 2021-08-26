@@ -63,8 +63,8 @@
                           size="20"
                         ></heart-icon
                       ></span>
-                    </div> -->
-                  </div>
+                    </div> 
+                  </div> -->
                 </div>
                 <download-icon
                   v-if="made.metadata.download"
