@@ -57,6 +57,7 @@ const PLUGINS = [
   ]
 
 module.exports = (req, res) => {
+    let arr = []
     PLUGINS.forEach((plugin) => {
     const url = "https://www.figma.com/api/plugins/" + plugin.id + "/versions";
       https.get(url, (resp) => {
@@ -72,5 +73,8 @@ module.exports = (req, res) => {
           res.json(pluginInfo);
         });
       });
+      arr.push(plugin)
     });
+    
+    console.log(arr)
 };
