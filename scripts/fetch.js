@@ -52,12 +52,10 @@ const PLUGINS = [
       "name": "space-cleaner"
     }
   ]
-  
-const FETCH = "../api/plugin-stats.js"
 
 function fetchFigmaData() {
 PLUGINS.forEach((plugin) => {
-  fetch(FETCH)
+  fetch("../api/plugin-stats.js")
     .then((response) => response.json())
     .then((data) => {
       const FETCHED_ID = data.id
