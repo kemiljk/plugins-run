@@ -73,7 +73,7 @@ module.exports = (req, res) => {
           res.json(pluginInfo);
         });
       });
-      arr.push(plugin)
+      arr.push(plugin.id)
     });
     
     console.log(arr)
