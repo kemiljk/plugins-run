@@ -24,7 +24,7 @@
                   >
                     {{ made.title }}
                   </h4>
-          <p class="text-gray-500 dark:text-gray-200 text-sm font-mono">
+          <p class="w-full text-gray-500 dark:text-gray-200 text-sm font-mono">
             {{ made.metadata.subtitle }}
           </p>
         </div>
