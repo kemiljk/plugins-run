@@ -24,11 +24,13 @@
                   >
                     {{ made.title }}
                   </h4>
-          <p class="w-full text-gray-500 dark:text-gray-200 text-sm font-mono">
-            {{ made.metadata.subtitle }}
-          </p>
-        </div>
-                  <!-- <div class="flex space-x-8 mb-4" v-if="this.loading === true">
+                  <p
+                    class="w-full text-gray-500 dark:text-gray-200 text-sm font-mono"
+                  >
+                    {{ made.metadata.subtitle }}
+                  </p>
+                </div>
+                <!-- <div class="flex space-x-8 mb-4" v-if="this.loading === true">
                     <svg
                       class="animate-spin -ml-1 mr-3 h-5 w-5 text-gray-600 dark:text-gray-400"
                       style="z-index: -1;"
@@ -69,15 +71,34 @@
                       ></span>
                     </div> 
                   </div> -->
-                </div>
-                <download-icon
-                  v-if="made.metadata.download"
-                  class="text-gray-700 dark:text-gray-300 hidden sm:block"
-                ></download-icon>
+              </div>
+              <download-icon
+                v-if="made.metadata.download"
+                class="text-gray-700 dark:text-gray-300 hidden sm:block"
+              ></download-icon>
+            </div>
+            <div class="flex items-center space-x-2 mt-4">
+              <p
+                class="text-gray-800 dark:text-gray-300 uppercase tracking-wider text-sm"
+              >
+                Available on
+              </p>
+              <div
+                v-if="made.metadata.figma"
+                class="flex items-center justify-between"
+              >
+                <Tag color="yellow">Figma</Tag>
+              </div>
+              <div
+                v-if="made.metadata.figjam"
+                class="flex items-center justify-between"
+              >
+                <Tag color="purple">FigJam</Tag>
               </div>
             </div>
           </header>
-          <!-- <div class="h-0.5 w-full bg-gray-100 dark:bg-gray-900" />
+        </div>
+        <!-- <div class="h-0.5 w-full bg-gray-100 dark:bg-gray-900" />
           <p class="pt-2 text-gray-500 dark:text-gray-200 text-sm font-mono">
             {{ made.metadata.subtitle }}
           </p>
