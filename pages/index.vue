@@ -54,7 +54,7 @@ export default {
           "A series of simple utility plugins that allow you as a designer or developer to easily manage your day-to-day workflow and improve your efficiencies. All for free.",
         url: "https://plugins.run/",
         mainImage:
-          "https://imgix.cosmicjs.com/4a55ed60-925a-11ec-9a4e-05fc85d83574-meta.png",
+          "https://imgix.cosmicjs.com/7cf175e0-9279-11ec-9a4e-05fc85d83574-meta.png",
       };
       return getSiteMeta(metaData);
     },
