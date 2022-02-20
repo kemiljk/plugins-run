@@ -26,7 +26,7 @@
       <div class="flex flex-row">
         <div class="grid w-full sm:grid-cols-2 gap-4">
           <div v-for="made in mades" :key="made.title">
-              <MadeCard :made="made" />
+            <MadeCard :made="made" />
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@ export default {
           "A series of simple utility plugins that allow you as a designer or developer to easily manage your day-to-day workflow and improve your efficiencies. All for free.",
         url: "https://plugins.run/",
         mainImage:
-          "https://res.cloudinary.com/kejk/image/upload/v1618328371/OG_Image_ezoyz9.png",
+          "https://imgix.cosmicjs.com/4a55ed60-925a-11ec-9a4e-05fc85d83574-meta.png",
       };
       return getSiteMeta(metaData);
     },

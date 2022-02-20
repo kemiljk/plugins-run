@@ -46,7 +46,7 @@ export default {
         hid: "og:image",
         property: "og:image",
         content:
-          "https://res.cloudinary.com/kejk/image/upload/v1618328371/OG_Image_ezoyz9.png",
+          "https://imgix.cosmicjs.com/4a55ed60-925a-11ec-9a4e-05fc85d83574-meta.png",
       },
       { property: "og:image:width", content: "740" },
       { property: "og:image:height", content: "300" },
@@ -73,7 +73,7 @@ export default {
         hid: "twitter:image:src",
         name: "twitter:image:src",
         content:
-          "https://res.cloudinary.com/kejk/image/upload/v1618328371/Twitter_Image_eteqen.png",
+          "https://imgix.cosmicjs.com/4a55ed60-925a-11ec-9a4e-05fc85d83574-meta.png",
       },
     ],
     link: [

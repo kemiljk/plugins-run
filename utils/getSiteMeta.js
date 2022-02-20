@@ -4,7 +4,7 @@ const title = "Plugins.run";
 const description =
   "A series of simple utility plugins that allow you as a designer or developer to easily manage your day-to-day workflow and improve your efficiencies. All for free.";
 const mainImage =
-  "https://res.cloudinary.com/kejk/image/upload/v1618328371/OG_Image_ezoyz9.png";
+  "https://imgix.cosmicjs.com/4a55ed60-925a-11ec-9a4e-05fc85d83574-meta.png";
 const twitterSite = "@_kejk";
 const twitterCard = "summary_large_image";
 export default (meta) => {
