@@ -36,7 +36,7 @@
 
 <script>
 import getSiteMeta from "../utils/getSiteMeta";
-import fetchFigmaData from "../scripts/fetch";
+// import fetchFigmaData from "../scripts/fetch";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -76,13 +76,13 @@ export default {
     this.getMadesData();
   },
   mounted() {
-    this.fetchFigmaData();
+    // this.fetchFigmaData();
   },
   methods: {
-    async fetchFigmaData() {
-      const data = fetchFigmaData;
-      this.fetchFigmaData = data;
-    },
+    // async fetchFigmaData() {
+    //   const data = fetchFigmaData;
+    //   this.fetchFigmaData = data;
+    // },
     async getMadesData() {
       this.loading = true;
       await bucket
