@@ -46,7 +46,7 @@ export default {
         hid: "og:image",
         property: "og:image",
         content:
-          "https://imgix.cosmicjs.com/7cf175e0-9279-11ec-9a4e-05fc85d83574-meta.png",
+          "https://imgix.cosmicjs.com/a8c215c0-927a-11ec-9a4e-05fc85d83574-meta.png",
       },
       { property: "og:image:width", content: "740" },
       { property: "og:image:height", content: "300" },
@@ -73,7 +73,7 @@ export default {
         hid: "twitter:image:src",
         name: "twitter:image:src",
         content:
-          "https://imgix.cosmicjs.com/7cf175e0-9279-11ec-9a4e-05fc85d83574-meta.png",
+          "https://imgix.cosmicjs.com/a8c215c0-927a-11ec-9a4e-05fc85d83574-meta.png",
       },
     ],
     link: [
