@@ -17,7 +17,7 @@
               alt="Image of media"
             />
             <div class="w-full flex justify-between">
-              <div class="w-5/6 sm:w-full">
+              <div>
                 <h4
                   class="pb-4 text-md font-black tracking-wide text-gray-900 dark:text-gray-100"
                 >
