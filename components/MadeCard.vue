@@ -16,7 +16,7 @@
               class="rounded-md max-h-24"
               alt="Image of media"
             />
-            <div class="w-full flex justify-between">
+            <div class="w-full items-center flex justify-between">
               <div>
                 <h4
                   class="pb-4 text-md font-black tracking-wide text-gray-900 dark:text-gray-100"
