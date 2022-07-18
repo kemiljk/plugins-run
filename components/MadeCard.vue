@@ -17,7 +17,7 @@
               alt="Image of media"
             />
             <div class="w-full items-center flex justify-between">
-              <div>
+              <div class="flex flex-col">
                 <div
               v-if="made.metadata.download"
               class="text-gray-700 dark:text-gray-300 shrink-0 h-8 w-8"
