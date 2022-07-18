@@ -41,11 +41,6 @@
                 >
                   {{ made.title }}
                 </h4>
-                <p
-                  class="w-full text-gray-500 dark:text-gray-200 text-sm font-mono"
-                >
-                  {{ made.metadata.subtitle }}
-                </p>
               </div>
               <!-- <div class="flex space-x-8 mb-4" v-if="this.loading === true">
                     <svg
@@ -92,11 +87,11 @@
           </div>
         </header>
       </div>
-      <!-- <div class="h-0.5 w-full bg-gray-100 dark:bg-gray-900" />
+      <div class="h-0.5 w-full bg-gray-100 dark:bg-gray-900" />
           <p class="pt-2 text-gray-500 dark:text-gray-200 text-sm font-mono">
             {{ made.metadata.subtitle }}
           </p>
-        </div> -->
+        </div>
     </a>
   </div>
 </template>
