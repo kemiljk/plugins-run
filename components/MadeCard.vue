@@ -22,7 +22,7 @@
                     v-if="made.metadata.figma"
                     class="flex items-center justify-between"
                   >
-                    <Tag color="yellow">Figma</Tag>
+                    <Tag color="blue">Figma</Tag>
                   </div>
                   <div
                     v-if="made.metadata.figjam"
