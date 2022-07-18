@@ -14,9 +14,9 @@ export default {
     colorClasses() {
       return {
         purple:
-          "bg-purple-900 dark:bg-purple-300 border border-purple-300 dark:border-purple-900 text-white dark:text-blue-900",
+          "bg-purple-900 dark:bg-purple-300 text-white dark:text-blue-900",
         blue:
-          "bg-blue-900 dark:bg-blue-300 border border-blue-300 dark:border-blue-900 text-white dark:text-blue-900",
+          "bg-blue-900 dark:bg-blue-300 text-white dark:text-blue-900",
       }[this.color];
     },
   },
