@@ -13,7 +13,7 @@
           <div class="flex space-x-4">
             <img
               :src="made.metadata.cover.imgix_url"
-              class="rounded-md max-h-24 border border-gray-200 dark:border-none"
+              class="rounded-md max-h-24 border border-gray-200 dark:border-gray-900"
               alt="Image of media"
             />
             <div class="w-full space-y-2">
