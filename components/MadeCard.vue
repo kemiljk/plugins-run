@@ -16,13 +16,9 @@
               class="rounded-md max-h-24"
               alt="Image of media"
             />
-            <div class="w-full items-center flex justify-between">
-              <div class="flex flex-col">
-                <div
-              v-if="made.metadata.download"
-              class="text-gray-700 dark:text-gray-300 shrink-0 h-8 w-8"
-            />
-          </div>
+            </div>
+            <div class="w-full">
+            <div>
           <div class="flex items-center space-x-2 mt-4">
             <div
               v-if="made.metadata.figma"
