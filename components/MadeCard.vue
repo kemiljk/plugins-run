@@ -16,28 +16,27 @@
               class="rounded-md max-h-24"
               alt="Image of media"
             />
-            </div>
             <div class="w-full">
-            <div>
-          <div class="flex items-center space-x-2 mt-4">
-            <div
-              v-if="made.metadata.figma"
-              class="flex items-center justify-between"
-            >
-              <Tag color="yellow">Figma</Tag>
-            </div>
-            <div
-              v-if="made.metadata.figjam"
-              class="flex items-center justify-between"
-            >
-              <Tag color="purple">FigJam</Tag>
-            </div>
+               <div class="flex items-center space-x-2 mt-4">
+                  <div
+                    v-if="made.metadata.figma"
+                    class="flex items-center justify-between"
+                  >
+                    <Tag color="yellow">Figma</Tag>
+                  </div>
+                  <div
+                    v-if="made.metadata.figjam"
+                    class="flex items-center justify-between"
+                  >
+                    <Tag color="purple">FigJam</Tag>
+                  </div>
+               </div> 
                 <h4
                   class="pb-4 text-md font-black tracking-wide text-gray-900 dark:text-gray-100"
                 >
                   {{ made.title }}
                 </h4>
-              </div>
+            </div>
               <!-- <div class="flex space-x-8 mb-4" v-if="this.loading === true">
                     <svg
                       class="animate-spin -ml-1 mr-3 h-5 w-5 text-gray-600 dark:text-gray-400"
@@ -79,7 +78,6 @@
                       ></span>
                     </div> 
                   </div> -->
-            </div>
           </div>
         </header>
         <div class="h-0.5 w-full bg-gray-100 dark:bg-gray-900" />
