@@ -80,7 +80,7 @@
                   </div> -->
           </div>
         </header>
-        <div class="h-0.5 w-full bg-gray-100 dark:bg-gray-800" />
+        <div class="h-0.5 w-full bg-gray-100 dark:bg-gray-800 mt-3" />
           <p class="pt-2 text-gray-500 dark:text-gray-200 text-sm font-mono">
             {{ made.metadata.subtitle }}
           </p>
