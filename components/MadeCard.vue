@@ -18,6 +18,24 @@
             />
             <div class="w-full items-center flex justify-between">
               <div>
+                <div
+              v-if="made.metadata.download"
+              class="text-gray-700 dark:text-gray-300 shrink-0 h-8 w-8"
+            />
+          </div>
+          <div class="flex items-center space-x-2 mt-4">
+            <div
+              v-if="made.metadata.figma"
+              class="flex items-center justify-between"
+            >
+              <Tag color="yellow">Figma</Tag>
+            </div>
+            <div
+              v-if="made.metadata.figjam"
+              class="flex items-center justify-between"
+            >
+              <Tag color="purple">FigJam</Tag>
+            </div>
                 <h4
                   class="pb-4 text-md font-black tracking-wide text-gray-900 dark:text-gray-100"
                 >
@@ -70,29 +88,6 @@
                       ></span>
                     </div> 
                   </div> -->
-            </div>
-            <Figma
-              v-if="made.metadata.download"
-              class="text-gray-700 dark:text-gray-300 shrink-0 h-8 w-8"
-            />
-          </div>
-          <div class="flex items-center space-x-2 mt-4">
-            <p
-              class="text-gray-800 dark:text-gray-300 uppercase tracking-wider text-sm"
-            >
-              Available on
-            </p>
-            <div
-              v-if="made.metadata.figma"
-              class="flex items-center justify-between"
-            >
-              <Tag color="yellow">Figma</Tag>
-            </div>
-            <div
-              v-if="made.metadata.figjam"
-              class="flex items-center justify-between"
-            >
-              <Tag color="purple">FigJam</Tag>
             </div>
           </div>
         </header>
