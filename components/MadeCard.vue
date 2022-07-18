@@ -16,7 +16,7 @@
               class="rounded-md max-h-24"
               alt="Image of media"
             />
-            <div class="w-full">
+            <div class="w-full space-y-2">
                <div class="flex items-center space-x-2 mt-4">
                   <div
                     v-if="made.metadata.figma"
