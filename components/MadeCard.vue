@@ -13,7 +13,7 @@
           <div class="flex space-x-4">
             <img
               :src="made.metadata.cover.imgix_url"
-              class="rounded-md max-h-24"
+              class="rounded-md max-h-24 border border-gray-200 dark:border-none"
               alt="Image of media"
             />
             <div class="w-full space-y-2">
@@ -80,7 +80,7 @@
                   </div> -->
           </div>
         </header>
-        <div class="h-0.5 w-full bg-gray-100 dark:bg-gray-900" />
+        <hr class="h-0.5 w-full bg-gray-100 dark:bg-gray-800" />
           <p class="pt-2 text-gray-500 dark:text-gray-200 text-sm font-mono">
             {{ made.metadata.subtitle }}
           </p>
